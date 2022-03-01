@@ -115,7 +115,7 @@ h1{
     height: 60px;
   }
 
-  @media screen and (max-width:391px){
+  @media screen and (max-width:500px){
   .navbar{
     padding: 0 25px;
   }
