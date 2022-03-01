@@ -27,10 +27,6 @@ body {
   font-size: 18px;
 }
 
-.navbar {
-  height: 125px;
-}
-
 .navbar-nav {
   flex: 1;
   margin: auto !important;
@@ -41,6 +37,11 @@ body {
 .navbar-toggler {
   width: 50px;
   padding: 0 !important;
+}
+
+#navmenu {
+  width: 100vw;
+  color: blue;
 }
 
 .row {
@@ -66,7 +67,7 @@ h1{
     font-size: 2em;
   }
 
-  .logo, .centered-logo{
+  .navbar-brand{
     font-family: "Augillion", serif;
     font-size: 3em;
   }
@@ -112,4 +113,31 @@ h1{
     width: 100%;
     /* Set the fixed height of the footer here */
     height: 60px;
+  }
+
+  @media screen and (max-width:391px){
+  .navbar{
+    padding: 0 25px;
+  }
+
+    h1 {
+    font-size: 4rem;
+  }
+
+  .small-caps {
+    font-size:1.5rem;
+  }
+
+  button {
+    width: 100px;
+    padding: 5px 10px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 25px;
+  }
+
+  button a {
+    font-size: 1.5rem;
+  }
+    
   }
