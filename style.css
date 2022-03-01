@@ -1,0 +1,115 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  box-sizing: border-box;
+  --bs-gutter-x: 0 !important;
+}
+
+@font-face {
+  font-family: Augillion;
+  src: url("/Augillion.otf") format("opentype");
+}
+  
+body {
+  background-image: url("8.png");
+  background-position: center;
+  background-size: cover;
+  color: #ffffff;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  font-family: "mrs-eaves", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+}
+
+.navbar {
+  height: 125px;
+}
+
+.navbar-nav {
+  flex: 1;
+  margin: auto !important;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar-toggler {
+  width: 50px;
+  padding: 0 !important;
+}
+
+.row {
+  width: 100vw;
+  height: 100vh;
+}
+
+.small-caps {
+  font-size: 3rem;
+}
+
+h1{
+  font-family: "Augillion", serif;
+  font-size: 8rem;
+}
+
+  h2{
+    font-size: 3em;
+  }  
+
+  h3{
+    font-weight:100;
+    font-size: 2em;
+  }
+
+  .logo, .centered-logo{
+    font-family: "Augillion", serif;
+    font-size: 3em;
+  }
+
+  .centered-logo{
+    text-decoration: none;
+    color: #fff;
+  }
+
+  li{
+      color: #ffffff;
+      font-size:1.25rem;
+  }
+
+  button {
+    border: none;
+    background-color: #9B6D29;
+    color: #fff;
+    width: 150px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 50px;
+  }
+
+  a {
+    color: #fff;
+
+  }
+
+  button a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 2rem;
+  }
+
+  .footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 60px;
+  }
