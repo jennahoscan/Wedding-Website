@@ -151,10 +151,7 @@ h1{
   }
 
   .footer {
-    bottom: 1rem;
-    width: 100%;
-    /* Set the fixed height of the footer here */
-    height: 60px;
+margin: 25px 0;
   }
 
   @media screen and (max-width:991px){
