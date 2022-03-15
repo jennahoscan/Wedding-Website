@@ -1,3 +1,4 @@
+/* Universal Styles */ 
 * {
   margin: 0;
   padding: 0;
@@ -14,146 +15,121 @@ body {
   background-image: url("photo-background.png");
   background-position: center;
   background-size: cover;
-  color: #ffffff;
   text-align: center;
-  margin: auto;
   font-family: "mrs-eaves", serif;
   font-weight: 400;
   font-style: normal;
   font-size: 18px;
+  color: #ffffff;
 }
 
-.submit {
-width: 150px !important;
+.content{
+  height:100vh;
 }
 
-.home-page{
-  --bs-gutter-x: 0 !important;
+.main-content {
+  height:85vh;
 }
 
-.navbar-toggler{
-height: 50px;
+h1 {
+  font-family: "Augillion", serif;
+  font-size: 8rem;
 }
 
+a {
+  font-size:1.25rem;
+  color: #ffffff !important;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+button {
+  border: none;
+  background-color: #9B6D29;
+  color: #fff;
+  width: 150px;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 50px;
+}
+
+button a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+/* Navigation Styles */ 
+.navbar-nav {
+  flex: 1;
+}
+
+.navbar-brand{
+  font-family: "Augillion", serif;
+  font-size: 3em;
+}
+
+.navbar-brand:hover {
+  text-decoration: none;
+}
+
+.navbar-toggler {
+  width: 50px;
+  height: 50px;
+  padding: 0 !important;
+}
+
+.active {
+  text-decoration: underline;
+}
+
+
+.centered-content {
+  line-height: 1;
+}
+
+.intro-text {
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+
+/* Internal Page Styles */ 
 .internal-page{
   background: #031638;
 }
 
 .internal-menu{
   background: #031638 !important;
+  position: relative;
 }
 
-.navbar.collapse {
-  display:flex;
-}
-.navbar.collapsing,
-.navbar.show {
-  background:white !important;
-}
-
-.navbar-nav {
-  flex: 1;
-  margin: auto !important;
-  display: flex;
-  justify-content: space-between;
+.enlarged-text {
+font-size: 1.5rem;
 }
 
 .internal-header{
-  margin-top: 10rem;
+  margin-top: 5rem;
 }
 
-.navbar-toggler {
-  width: 50px;
-  padding: 0 !important;
-}
-
-nav .navbar-nav li a{
-  color: white !important;
+.submit {
+  width: 150px !important;
   }
 
-  a:hover {
-    text-decoration: underline;
+  .accordion-body {
+    color:#000;
   }
 
-  .navbar-brand:hover {
-    text-decoration: none;
+  .show {
+    width: inherit;
   }
 
-.cta {
-  width: 100vw;
-  height: 100vh;
-}
-
-.small-caps {
-  font-size: 3rem;
-}
-
-h1{
-  font-family: "Augillion", serif;
-  font-size: 8rem;
-}
-
-  h2{
-    font-size: 3em;
-  }  
-
-  h3{
-    font-weight:100;
-    font-size: 2em;
-  }
-
-  .navbar-brand{
-    font-family: "Augillion", serif;
-    font-size: 3em;
-  }
-
-  .centered-logo{
-    text-decoration: none;
-    color: #fff;
-  }
-
-  li{
-      color: #ffffff;
-      font-size:1.25rem;
-  }
-
-  .active{
-    text-decoration: underline;
-  }
-  
-  button {
-    border: none;
-    background-color: #9B6D29;
-    color: #fff;
-    width: 150px;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 50px;
-  }
-
-  a {
-    color: #fff;
-
-  }
-
-  button a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 2rem;
-  }
-
-  button a, footer a:hover {
-    color: #fff;
-  }
-
-  .footer {
-margin: 25px 0;
-  }
-
+/* Media Queries */ 
   @media screen and (max-width:991px){
 
     .container {
@@ -175,7 +151,7 @@ margin: 25px 0;
     display: none;
   }
 
-  .small-caps {
+  .intro-text{
     font-size:1.5rem;
   }
 
@@ -214,7 +190,7 @@ margin: 25px 0;
         font-size: 6rem;
       }
 
-      .smal-caps{
+      .intro-text{
         font-size: 4rem;
       }
   
@@ -226,12 +202,37 @@ margin: 25px 0;
   h1{
     font-size: 4rem;
   }
+}
 
+  @media (max-width:560px) {
+
+    iframe {
+      width:500px;
+    }
+  }
+
+  @media (max-width:500px) {
+
+    iframe {
+      width:425px;
+    }
+  }
+
+  @media (max-width:425px) {
+
+    iframe {
+      width:350px;
+    }
+  }
 
 @media (max-width:375px) {
 
       h1{
         font-size: 3rem;
+      }
+
+      .intro-text{
+        font-size: 1.5rem;
       }
   
     
@@ -242,12 +243,13 @@ margin: 25px 0;
     font-size: 2.5rem;
   }
 
-  .small-caps{
-    font-size: 1.5rem;
+  .intro-text{
+    font-size: 1rem;
   }
 
   footer{
     font-size: 1rem;
   }
+  
 
 }
