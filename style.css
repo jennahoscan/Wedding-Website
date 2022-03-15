@@ -89,11 +89,6 @@ button a {
   text-decoration: underline;
 }
 
-
-.centered-content {
-  line-height: 1;
-}
-
 .intro-text {
   font-size: 3rem;
   text-transform: uppercase;
@@ -106,15 +101,10 @@ button a {
 
 .internal-menu{
   background: #031638 !important;
-  position: relative;
 }
 
-.enlarged-text {
-font-size: 1.5rem;
-}
-
-.internal-header{
-  margin-top: 5rem;
+.internal-header {
+  margin-top:8rem;
 }
 
 .submit {
@@ -136,6 +126,9 @@ font-size: 1.5rem;
     max-width: 100vw;
   }
 
+  .main-content {
+    height:65vh;
+  }
   .navbar-brand,  .navbar-toggler {
     margin: 0 1rem;
   } 
@@ -184,14 +177,14 @@ font-size: 1.5rem;
         }
     }
 
-    @media (max-width:768px) {
+    @media (max-width:750px) {
 
       h1{
-        font-size: 6rem;
+        font-size: 5rem;
       }
 
       .intro-text{
-        font-size: 4rem;
+        font-size: 2.5rem;
       }
   
     
@@ -201,6 +194,10 @@ font-size: 1.5rem;
 
   h1{
     font-size: 4rem;
+  }
+
+  .intro-text{
+    font-size: 2rem;
   }
 }
 
