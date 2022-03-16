@@ -28,6 +28,7 @@ body {
 
 .main-content {
   height:85vh;
+  overflow-x: scroll;
 }
 
 h1 {
@@ -38,6 +39,11 @@ h1 {
 h2 {
   font-family: "Augillion", serif;
   font-size: 3rem;
+}
+
+h3 {
+  font-family: "Augillion", serif;
+  font-size: 2rem;
 }
 
 a {
