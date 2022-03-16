@@ -108,6 +108,9 @@ i {
   background: #031638;
 }
 
+.stay {
+  height:100vh;
+}
 .internal-menu{
   background: #031638 !important;
 }
@@ -240,9 +243,6 @@ i {
     font-size: 2rem;
   }
 
-  .main-content{
-    margin: 5rem 0;
-  }
 }
 
   @media (max-width:560px) {
