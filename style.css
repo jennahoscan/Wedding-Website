@@ -35,6 +35,11 @@ h1 {
   font-size: 8rem;
 }
 
+h2 {
+  font-family: "Augillion", serif;
+  font-size: 3rem;
+}
+
 a {
   font-size:1.25rem;
   color: #ffffff !important;
@@ -62,6 +67,11 @@ button a {
   color: #fff;
   text-decoration: none;
   font-size: 2rem;
+}
+
+i {
+  color: #ffffff;
+  height: 2rem;
 }
 
 /* Navigation Styles */ 
@@ -109,10 +119,35 @@ button a {
 .submit {
   width: 150px !important;
   }
+  .accordion-button:after {
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
+  }
+  .accordion {
+    width: 80vw;}
 
   .accordion-body {
     color:#000;
+    background-color: #ffffff;
   }
+
+  .accordion-button {
+    background-color:#031638;
+    color: #fff;
+  }
+
+  .accordion-item {
+    background-color: transparent;
+}
+  
+  .accordion-button:not(.collapsed) {
+    background-color:#031638;
+    color: #fff;
+  }
+
+  .hotel {
+    width:80vw;
+  }
+
 
   .show {
     width: inherit;
@@ -156,6 +191,10 @@ button a {
   button a {
     font-size: 1.5rem;
   }
+
+  .faq{
+    height: auto;
+  }
     
   }
 
@@ -183,6 +222,10 @@ button a {
       .intro-text{
         font-size: 2.5rem;
       }
+
+      .accordion {
+        width: 100vw;}
+    
   
     
 }
@@ -195,6 +238,10 @@ button a {
 
   .intro-text{
     font-size: 2rem;
+  }
+
+  .main-content{
+    margin: 5rem 0;
   }
 }
 
