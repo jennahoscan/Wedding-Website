@@ -1,7 +1,8 @@
 /* Universal Styles */ 
 * {
   margin: 0;
-  padding: 0;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
   box-sizing: border-box;
 }
 
@@ -125,6 +126,8 @@ i {
   margin-top:8rem;
 }
 
+
+
 .submit {
   width: 150px !important;
   }
@@ -157,6 +160,10 @@ i {
     width:80vw;
   }
 
+  .hotel {
+    width:80vw;
+  }
+
 
   .show {
     width: inherit;
@@ -175,6 +182,17 @@ i {
   } 
 }
 
+@media screen and (max-height:525px){
+
+  footer {
+  display:none;
+}
+
+
+.navbar-brand,  .navbar-toggler {
+  margin: 0 1rem;
+} 
+}
   @media screen and (max-width:576px){
 
     h1 {
