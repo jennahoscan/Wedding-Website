@@ -29,7 +29,6 @@ body {
 
 .main-content {
   height:85vh;
-  overflow-x: scroll;
 }
 
 h1 {
