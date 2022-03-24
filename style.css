@@ -23,7 +23,7 @@ body {
   color: #ffffff;
 }
 
-.content{
+.content {
   height:100vh;
 }
 
@@ -34,7 +34,31 @@ body {
 h1 {
   font-family: "Augillion", serif;
   font-size: 8rem;
+  margin: 0;
+  line-height: 1.5;
 }
+
+.intro-text {
+  font-size: 3rem;
+  margin: 0;
+  line-height: .75;
+}
+
+.intro-paragraph {
+  margin: 25px 30%;
+  font-size: 1.5rem;
+}
+
+.intro-paragraph a{
+  font-size: 1.5rem;
+}
+
+.crossed-out {
+  text-decoration: line-through;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 0.1em;
+}
+
 
 h2 {
   font-family: "Augillion", serif;
@@ -77,7 +101,7 @@ button a {
 
 i {
   color: #ffffff;
-  height: 2rem;
+  font-size: 2rem;
 }
 
 /* Navigation Styles */ 
@@ -102,11 +126,6 @@ i {
 
 .active {
   text-decoration: underline;
-}
-
-.intro-text {
-  font-size: 3rem;
-  text-transform: uppercase;
 }
 
 /* Internal Page Styles */ 
@@ -179,10 +198,32 @@ i {
   .navbar-brand,  .navbar-toggler {
     margin: 0 1rem;
   } 
+
+  h1 {
+    font-size: 6rem;
+  }
+
+  .intro-paragraph{
+    margin: 25px 15%;
+  }
 }
 
-@media screen and (max-height:525px){
+@media screen and (max-height:675px){
+  h1{
+    font-size: 3rem;
+  }
 
+  .intro-text{
+    font-size: 2rem;
+  }
+
+.intro-paragraph{
+  font-size: 1rem;
+}
+
+.intro-paragraph a{
+  font-size: 1rem;
+}
   footer {
   display:none;
 }
@@ -272,6 +313,23 @@ i {
 
     iframe {
       width:500px;
+    }
+
+    h1{
+      font-size: 3rem;
+    }
+
+    .intro-text {
+      font-size: 1.5rem;
+    }
+
+    .intro-paragraph {
+      font-size: 1.25rem;
+      margin: 25px 10%;
+    }
+
+    .intro-paragraph a{
+      font-size: 1.25rem;
     }
   }
 
